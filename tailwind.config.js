@@ -1,0 +1,82 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "secondary-fixed-dim": "#ddb7ff",
+        "secondary-container": "#6f00be",
+        "on-error": "#690005",
+        "on-primary-fixed-variant": "#753400",
+        "outline": "#a78b7c",
+        "on-tertiary-fixed": "#36003d",
+        "on-secondary-fixed-variant": "#6900b3",
+        "tertiary-fixed": "#ffd6fb",
+        "on-secondary": "#490080",
+        "surface-container-high": "#2a2a2c",
+        "on-primary": "#522300",
+        "surface-dim": "#131315",
+        "surface-container-highest": "#353437",
+        "primary": "#ffb68b",
+        "inverse-surface": "#e5e1e4",
+        "primary-container": "#ff7a00",
+        "primary-fixed-dim": "#ffb68b",
+        "tertiary": "#fda9ff",
+        "on-error-container": "#ffdad6",
+        "on-secondary-container": "#d6a9ff",
+        "on-background": "#e5e1e4",
+        "surface-container-low": "#1c1b1d",
+        "inverse-primary": "#994700",
+        "surface-tint": "#ffb68b",
+        "tertiary-fixed-dim": "#fda9ff",
+        "secondary": "#ddb7ff",
+        "on-surface-variant": "#e0c0af",
+        "on-tertiary-container": "#63006f",
+        "error": "#ffb4ab",
+        "secondary-fixed": "#f0dbff",
+        "on-primary-container": "#5c2800",
+        "error-container": "#93000a",
+        "primary-fixed": "#ffdbc8",
+        "on-secondary-fixed": "#2c0051",
+        "surface-container": "#201f22",
+        "tertiary-container": "#f165ff",
+        "on-surface": "#e5e1e4",
+        "on-primary-fixed": "#321200",
+        "on-tertiary-fixed-variant": "#7d008c",
+        "surface-bright": "#39393b",
+        "surface-container-lowest": "#0e0e10",
+        "surface": "#131315",
+        "inverse-on-surface": "#313032",
+        "on-tertiary": "#580063",
+        "surface-variant": "#353437",
+        "background": "#131315",
+        "outline-variant": "#584235"
+      },
+      borderRadius: {
+        "DEFAULT": "1rem",
+        "lg": "2rem",
+        "xl": "3rem",
+        "full": "9999px"
+      },
+      spacing: {
+        "lg": "48px",
+        "md": "24px",
+        "gutter": "24px",
+        "base": "8px",
+        "margin-mobile": "16px",
+        "xl": "80px",
+        "xs": "4px",
+        "sm": "12px",
+        "margin-desktop": "64px"
+      },
+      fontFamily: {
+        sans: ["Plus Jakarta Sans", "sans-serif"]
+      }
+    },
+  },
+  plugins: [],
+}

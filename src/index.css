@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    @apply bg-background text-on-surface antialiased overflow-x-hidden;
+  }
+}
+
+.kinetic-gradient {
+  background: linear-gradient(135deg, #ff7a00 0%, #6f00be 100%);
+}
+
+.brand-gradient-text {
+  background: linear-gradient(135deg, #ffb68b 0%, #ddb7ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glass-card {
+  background: rgba(21, 25, 40, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.neon-glow-primary {
+  box-shadow: 0 0 20px rgba(255, 122, 0, 0.15);
+}
+
+.neon-glow-secondary {
+  box-shadow: 0 0 20px rgba(111, 0, 190, 0.2);
+}
+
+.floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.stagger-1 { animation-delay: 0s; }
+.stagger-2 { animation-delay: 1.5s; }
+.stagger-3 { animation-delay: 3s; }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* AI Neural scanner glow effect */
+.ai-scanner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 122, 0, 0.1),
+    transparent
+  );
+  animation: scanning 2s infinite linear;
+}
+
+@keyframes scanning {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
