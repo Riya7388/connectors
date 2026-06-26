@@ -1,4 +1,5 @@
-import { useRef, useState, useEffect, MouseEvent } from "react";
+import { useRef, useState, useEffect } from "react";
+import type { MouseEvent } from "react";
 import { motion, useInView } from "framer-motion";
 import {
   Search,
