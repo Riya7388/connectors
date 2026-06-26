@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Search, GraduationCap, Code, ShieldCheck, Star, Video, ArrowRight, Sparkles, Users, Award } from "lucide-react";
+import PricingSection from "../components/PricingSection";
+import HowItWorks from "../components/HowItWorks";
 
 interface HomeProps {
   setActiveTab: (tab: string) => void;
@@ -180,6 +182,12 @@ export const Home: React.FC<HomeProps> = ({ setActiveTab }) => {
           </div>
         </div>
       </section>
+
+      {/* How It Works — Journey Section */}
+      <HowItWorks />
+
+      {/* Pricing Section */}
+      <PricingSection />
 
       {/* Interactive Platform Overview Callout */}
       <section className="py-12 max-w-7xl mx-auto px-6 mb-16">
